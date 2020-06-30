@@ -1,0 +1,132 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ececec;
+  font-family: "Roboto", sans-serif;
+}
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px 20px;
+}
+#header{
+  background-color: #fff;
+  padding:10px 0px;
+
+}
+#header ul{
+  list-style-type: none;
+}
+#header a{
+  display: block;
+  padding:15px;
+  color :rgb(43,1,51);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#header nav a:hover,
+#header nav a:focus{
+  background-color: rgba(0, 0, 0, .1);
+
+}
+#header nav{
+  display:flex;
+  justify-content:space-between  ;
+}
+#header .categories{
+  display:flex;
+}
+#header .logo{
+  font-size:2em;
+  padding: 0px;
+}
+#books-section,
+#book-deatail,
+#page-not-found
+{
+  margin:50px 0px;
+}
+.section-title{
+  padding:20px 0px;  
+}
+.books-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+}
+.book{
+  box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+  background-color:#fff ;
+
+}
+.book-img img{
+  width:100%;
+  height:200px ;
+}
+
+#books-section .book-info{
+  padding:10px;
+}
+#books-section .book-title{
+padding-bottom: 5px;  
+}
+.btn{
+  padding:15px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  margin:10px 0px;
+  opacity: 0.9;
+  text-decoration: none;
+  display:inline-block;
+}
+.btn:hover,
+.btn:focus{
+  opacity: 1;
+}
+.btn-highlight{
+  background-color:blueviolet;
+  color:#fff;
+}
+#book-detail .book-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+
+}
+#book-detail .book-img img{
+  max-width: 100%;
+}
+#book-detail .book-title{
+  padding-bottom: 20px;
+}
+#book-detail .book-author{
+  padding-bottom: 20px;
+}
+#book-detail .book-review-container{
+  
+  font-size: 1.2em;
+}
+#book-detail .book-review-container .book-stars{
+ color:yellowgreen;
+}
+#book-detail .book-review-container .book-review{
+  margin-left: 5px;
+}
+#footer{
+  background-color:blueviolet;
+  color:#fff;
+  text-align:center;
+  font-size: 1.1em;
+  padding:20px;
+  margin-top: auto;
+}
+.has-fixed-footer{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
